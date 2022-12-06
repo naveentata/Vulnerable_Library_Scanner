@@ -1,0 +1,24 @@
+{
+    "numpy": [
+        {
+            "function_name": "load",
+            "cve": "CVE-2019-6446",
+            "cvssV3_score": 9.8,
+            "description": "** DISPUTED **   An issue was discovered in NumPy 1.16.0 and earlier. It uses the pickle Python module unsafely, which allows remote attackers to execute arbitrary code via a crafted serialized object, as demonstrated by a numpy.load call. NOTE: third parties dispute this issue because it is  a behavior that might have legitimate applications in (for example)  loading serialized Python object arrays from trusted and authenticated  sources.",
+            "Versions affected before": "1.16.0",
+            "version_installed": "1.13.0",
+            "version_latest": "1.23.5",
+            "upgrade_required": "Yes"
+        },
+        {
+            "function_name": "pad",
+            "cve": "CVE-2017-12852",
+            "cvssV3_score": 7.5,
+            "description": "The numpy.pad function in Numpy 1.13.1 and older versions is missing input validation. An empty list or ndarray will stick into an infinite loop, which can allow attackers to cause a DoS attack.",
+            "Versions affected before": "1.13.1",
+            "version_installed": "1.13.0",
+            "version_latest": "1.23.5",
+            "upgrade_required": "Yes"
+        }
+    ]
+}
